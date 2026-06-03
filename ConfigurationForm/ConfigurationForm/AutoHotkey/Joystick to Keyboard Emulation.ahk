@@ -1,14 +1,6 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #SingleInstance Force
 #Persistent  ; Keep this script running until the user explicitly exits it.
-
-; Fallback for builds/runtimes where CriticalObject is not provided.
-; The project uses it only as an object wrapper, so returning the object keeps source builds working.
-CriticalObject(obj)
-{
-	return obj
-}
-
 ;#Warn  ; Enable warnings to assist with detecting common errors.
 
 #MaxHotkeysPerInterval 99000000
